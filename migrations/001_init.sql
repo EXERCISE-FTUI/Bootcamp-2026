@@ -46,9 +46,9 @@ create table if not exists public.users (
   status submission_status not null default 'NOT_SUBMITTED',
   "code" text unique default generate_referral_code(),
   points integer not null default 0,
-  created_at timestamptz not null default now()
+  created_at timestamptz not null default now(),
 
-  isFromIKMExpo boolean not null default false,
+  isFromIKMExpo boolean not null default false
 );
 
 -- Uniqueness for email (case-insensitive)

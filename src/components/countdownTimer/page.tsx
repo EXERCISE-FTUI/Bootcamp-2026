@@ -3,7 +3,8 @@ import React, { useState, useEffect } from "react";
 
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
-import { bookletLink } from "@/utils/information";
+import { bookletLink, deadlineCloseReg } from "@/utils/information";
+import { toStringDate } from "@/utils/functions";
 
 const CountdownTimer: React.FC = () => {
     const [timeLeft, setTimeLeft] = useState({
@@ -13,7 +14,7 @@ const CountdownTimer: React.FC = () => {
     });
     const router = useRouter();
 
-    const deadline = "2025-09-29T23:59:00";
+    const deadline = deadlineCloseReg;
 
     useEffect(() => {
         const calculateTimeLeft = () => {
@@ -116,7 +117,7 @@ const CountdownTimer: React.FC = () => {
                                         height={28}
                                     />
                                     <div className="text-center text-white lg:text-lg font-medium">
-                                        29 Sep 2025, 23:59 WIB
+                                        {toStringDate(deadline)}
                                     </div>
                                 </div>
                             </div>

@@ -2,9 +2,11 @@
 import { Button } from "@/components/ui/button";
 import { Monitor, Settings, BarChart } from "lucide-react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { UserData } from "@/app/dashboard/page";
 import { campaignIKMExpoDeadline } from "@/utils/information";
+import { toStringDate } from "@/utils/functions";
 
 const iconData = [
     { Icon: Monitor, label: "Monitor" },
@@ -13,6 +15,7 @@ const iconData = [
 ];
 
 export const NotRegisteredDashboard = (userData: UserData) => {
+    const router = useRouter();
     const [isFromIKMExpo] = useState(userData.isFromIKMExpo);
 
     return (
@@ -20,7 +23,7 @@ export const NotRegisteredDashboard = (userData: UserData) => {
             <div className="min-h-screen flex items-center justify-center">
                 <div className="container mx-auto px-6 py-12 lg:px-12 lg:py-24">
                     <div className="flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-56">
-                        <div className="space-y-6 text-center lg:text-left">
+                         <div className="space-y-6 text-center lg:text-left">
                             <h1 className="text-4xl lg:text-6xl font-sans">
                                 <span className="text-black">
                                     Fill out your{" "}
@@ -32,8 +35,12 @@ export const NotRegisteredDashboard = (userData: UserData) => {
                                 <br />
                                 <span className="text-black">Now!</span>
                             </h1>
-                            <Button className="bg-[#804AF2]/70 cursor-not-allowed hover:bg-[#702EFC] lg:text-xl text-white px-8 py-3 rounded-lg font-medium">
-                                Recruitment is Closed!
+                            {/* ubah jadi tidak bisa fill form lagi jika sudah melewati deadline */}
+                            <Button
+                                className="bg-[#804AF2] hover:bg-[#702EFC] lg:text-xl text-white px-8 py-3 rounded-lg font-medium"
+                                onClick={() => router.push("/dashboard/upload")}
+                            >
+                                Fill Form
                             </Button>
                             {isFromIKMExpo &&
                                 Date.now() <
@@ -42,7 +49,7 @@ export const NotRegisteredDashboard = (userData: UserData) => {
                                     ).getTime() && (
                                     <div className="mt-2 px-4 py-2 bg-purple-100 text-purple-800 rounded text-sm font-medium">
                                         IKM Expo attendee bonus: Submit before{" "}
-                                        <b>19 Sep 2025</b> to receive{" "}
+                                        <b>{toStringDate(campaignIKMExpoDeadline)}</b> to receive{" "}
                                         <b>100 pts</b> bonus!
                                     </div>
                                 )}

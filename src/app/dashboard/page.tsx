@@ -62,6 +62,10 @@ async function fetchUserData() {
     // If no form submission exists, create a basic structure
     if (!formData) {
         console.log("No form submission found for user");
+        console.log("but we return: " + JSON.stringify({
+            ...userData,
+            user_id: auth.user.id,
+        }));
         return {
             ...userData,
             user_id: auth.user.id,

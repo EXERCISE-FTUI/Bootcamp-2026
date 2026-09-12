@@ -12,10 +12,10 @@ const CountdownTimer: React.FC = () => {
         hours: 0,
         minutes: 0,
     });
+
     const router = useRouter();
-
     const deadline = deadlineCloseReg;
-
+    
     useEffect(() => {
         const calculateTimeLeft = () => {
             const now = new Date().getTime();

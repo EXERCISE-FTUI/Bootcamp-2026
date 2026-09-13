@@ -12,8 +12,8 @@ const CountdownTimer: React.FC = () => {
         hours: 0,
         minutes: 0,
     });
-    const router = useRouter();
 
+    const router = useRouter();
     const deadline = deadlineCloseReg;
 
     useEffect(() => {
@@ -51,7 +51,7 @@ const CountdownTimer: React.FC = () => {
                 <div
                     className="absolute w-full h-1/2 translate-y-4 bg-black z-0"
                     style={{
-                        background: "linear-gradient(0deg, #9D98B3, #9D98B3)",
+                        background: "linear-gradient(0deg, #b39898, #b39898)",
                         filter: "blur(200px)",
                         borderRadius: "100px",
                     }}
@@ -125,12 +125,8 @@ const CountdownTimer: React.FC = () => {
                     </div>
 
                     {/* Background Gradient - Positioned relative to container */}
-                    <div className="w-[110vw] lg:w-full h-4/5 lg:h-2/3 -bottom-6 lg:bottom-0 -left-4 lg:rounded-xl backdrop-blur-sm absolute z-0 bg-cover">
-                        <motion.img
-                            src="/spaceycountdown.svg"
-                            alt="spaceycountdown"
-                            className="w-full h-full object-cover"
-                        />
+                    <div className="w-[110vw] lg:w-full h-4/5 lg:h-2/3 -bottom-6 lg:bottom-0 -left-4 lg:rounded-xl backdrop-blur-sm absolute z-0 bg-gradient-to-br from-[#240005] via-[#4A0012] to-[#760022]">
+                        {/* Kamu bisa menambahkan elemen dekorasi tambahan di sini jika diperlukan (seperti icon '+' di sudut) */}
                     </div>
 
                     {/* Content Container */}
@@ -156,12 +152,11 @@ const CountdownTimer: React.FC = () => {
 
                 <div className="w-full flex justify-center pt-16 md:pt-12 lg:mt-12 lg:p-0 p-4">
                     <button
-                        className="z-10 group w-[50vh] flex items-center gap-3 justify-center px-16 py-3 rounded-xl border-2 border-white hover:border-[#0A192F] shadow-lg hover:scale-[120%] duration-100
-						bg-gradient-to-r from-[#0A192F] to-[#002A5E]
-						hover:from-white hover:to-white"
+                        className="z-10 group w-[50vh] flex items-center gap-3 justify-center px-16 py-3 rounded-xl border-2 border-white shadow-lg hover:scale-[120%] duration-100
+						bg-gradient-to-br from-[#240005] via-[#4A0012] to-[#760022]"
                         onClick={() => router.push("/dashboard")}
                     >
-                        <div className="text-center text-white text-xl font-bold group-hover:text-[#002A5E]">
+                        <div className="text-center text-white text-xl font-bold">
                             Register Now
                         </div>
                     </button>

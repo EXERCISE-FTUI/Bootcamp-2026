@@ -51,6 +51,8 @@ export default async function IkmExpoPage() {
             },
         });
 
+        console.log("tambah poin 100");
+
         // set status to true
         await (await supabase)
             .from("users")

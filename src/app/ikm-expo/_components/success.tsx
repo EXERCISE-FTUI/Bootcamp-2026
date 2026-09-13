@@ -1,5 +1,7 @@
 "use client";
 import { Button } from "@/components/ui/button";
+import { toStringDate } from "@/utils/functions";
+import { campaignIKMExpoDeadline } from "@/utils/information";
 import { useRouter } from "next/navigation";
 
 export default function IkmExpoSuccessPage() {
@@ -16,7 +18,7 @@ export default function IkmExpoSuccessPage() {
             </h1>
             <p className="mb-6">
                 Complete your form submission before{" "}
-                <b>Friday, 19 Sep 2025 23:59 WIB</b> to receive 100 points.
+                <b>{toStringDate(campaignIKMExpoDeadline)}</b> to receive 100 points.
             </p>
             <Button
                 className="px-4 py-2 bg-purple_4 hover:bg-purple_3 text-white rounded"

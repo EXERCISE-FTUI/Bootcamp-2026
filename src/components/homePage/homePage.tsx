@@ -6,13 +6,15 @@ const createFallingStar = (delay: number) => ({
         y: -100,
         x: 0,
         opacity: 0,
+        rotate: -40,
     },
     animate: {
-        y: 800,
+        y: 400,
         x: [0, 80, -80, 0],
         opacity: [0, 1, 1, 0],
+        rotate: Math.round(Math.random() * 360 - 180),
         transition: {
-            duration: 4,
+            duration: 2.5,
             repeat: Infinity,
             repeatDelay: 0,
             ease: "linear",
@@ -22,21 +24,21 @@ const createFallingStar = (delay: number) => ({
 });
 
 const HomePageExer = () => {
-    const starDelays = [0.2, 1.5, 0.8, 2.1, 1.2, 0.5, 1.8];
+    const starDelays = [0.2, 1.7, 1, 2.1, 1.2, 0.5, 1.8];
 
     return (
         <div className="w-full lg:mt-20 lg:h-[500px] lg:p-0 p-8 pb-10 lg:pb-20 overflow-hidden relative">
             <div className="w-full h-[130%] gap-8 flex flex-col justify-center items-center">
-                <h1 className="text-7xl max-md:text-5xl text-center font-black text-blue_3">
+                <h1 className="text-center text-4xl lg:text-6xl max-md:text-xl font-black text-blue_3">
                     <motion.span
-                        className="bg-white bg-clip-text text-transparent"
+                        className="lg:px-4 px-2 py-1 w-auto h-auto bg-blue_3 text-white_2"
                         initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
+                        animate={{ opacity: 1.2 }}
                         transition={{
                             duration: 2,
                         }}
                     >
-                        AIGNITE
+                        PRODIFY
                     </motion.span>{" "}
                     <motion.span
                         initial={{ opacity: 0 }}
@@ -45,7 +47,6 @@ const HomePageExer = () => {
                             delay: 0.5,
                             duration: 3,
                         }}
-                        className="bg-clip-text text-transparent bg-gradient-to-b from-[#15394A] via-[#2B7696] to-[#FFFFFF] "
                     >
                         BOOTCAMP
                     </motion.span>
@@ -56,11 +57,16 @@ const HomePageExer = () => {
                     transition={{ delay: 1.5, duration: 2 }}
                 >
                     <div className="w-full gap-2 text-center">
-                        <motion.img
-                            src="/Exer-Footer.svg"
-                            alt="headerExer"
-                            className="w-full h-[200px] z-10"
+                        <Image
+                            src="/exer2026.svg"
+                            alt="exer2026"
+                            width={725}
+                            height={110}
+                            className="w-[725px] h-[35px] lg:h-[110px] z-10"
                         />
+                        <p className="text-blue_3 text-2xl max-md:text-lg font-extrabold italic">
+                            #ExcellenceRefined
+                        </p>
                     </div>
                 </motion.div>
             </div>
@@ -68,9 +74,9 @@ const HomePageExer = () => {
             <Image
                 src="/hexagonLeft.svg"
                 alt="hexagonLeft"
+                width={210}
+                height={353}
                 className="absolute top-20 left-0 size z-0 max-lg:hidden"
-                width={100}
-                height={100}
             />
 
             <motion.img
@@ -79,34 +85,34 @@ const HomePageExer = () => {
                 animate="animate"
                 src="/star1_topLeft.svg"
                 alt="star1_topLeft"
-                className="absolute top-52 left-64 size-16 max-lg:left-14 max-lg:size-10 z-0"
+                className="absolute top-52 left-64 size-16 max-lg:left-14 lg:size-24 z-0"
             />
 
             <motion.img
                 variants={createFallingStar(starDelays[2])}
                 initial="initial"
                 animate="animate"
-                src="/star2_middleLeft.svg"
-                alt="star2_middleLeft"
-                className="absolute top-[340px] left-[380px] size max-lg:left-20 max-lg:size-7 max-lg:rotate-[28deg] z-0"
+                src="/star3_bottomRight.svg"
+                alt="star3_bottomRight"
+                className="absolute top-[340px] left-[380px] size-8 max-lg:left-20 lg:size-14 max-lg:rotate-[28deg] z-0"
             />
 
             <motion.img
                 variants={createFallingStar(starDelays[3])}
                 initial="initial"
                 animate="animate"
-                src="/star3_bottomRight.svg"
-                alt="star3_bottomRight"
-                className="absolute top-0 left-48 size-32 max-lg:left-[-38px] max-lg:size-24 z-0"
+                src="/star2_middleLeft.svg"
+                alt="star2_middleLeft"
+                className="absolute top-0 left-48 size-14 max-lg:left-[-38px] lg:size-20 z-0"
             />
 
             {/*Right Section */}
             <Image
                 src="/polygonRight.svg"
                 alt="polygonRight"
+                width={171}
+                height={330}
                 className="absolute top-44 right-0 size z-0 max-lg:hidden"
-                width={100}
-                height={100}
             />
 
             <motion.img
@@ -115,7 +121,7 @@ const HomePageExer = () => {
                 animate="animate"
                 src="/star1_topLeft.svg"
                 alt="star1_topLeft"
-                className="absolute top-40 right-48 size z-0 max-lg:right-0 max-lg:size-20"
+                className="absolute top-40 right-48 size-8 z-0 max-lg:right-0 lg:size-12"
             />
 
             <motion.img
@@ -124,7 +130,7 @@ const HomePageExer = () => {
                 animate="animate"
                 src="/star2_middleLeft.svg"
                 alt="star2_middleLeft"
-                className="absolute top-80 right-[340px] size z-0 max-lg:size-8 max-lg:right-32 max-md:right-16"
+                className="absolute top-80 right-[340px] size-12 z-0 lg:size-20 max-lg:right-32 max-md:right-16"
             />
 
             <motion.img
@@ -133,9 +139,9 @@ const HomePageExer = () => {
                 animate="animate"
                 src="/star1_topLeft.svg"
                 alt="star1_topLeft"
-                className="absolute top-0 right-52 size-12 z-0 max-lg:top-[440px] max-lg:size-6 max-lg:right-8"
+                className="absolute top-0 right-52 size-3 z-0 max-lg:top-[440px] lg:size-8 max-lg:right-8"
             />
-        </div>
+        </div >
     );
 };
 

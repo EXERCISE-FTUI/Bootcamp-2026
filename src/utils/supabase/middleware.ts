@@ -39,11 +39,6 @@ export async function updateSession(request: NextRequest) {
         data: { user },
     } = await supabase.auth.getUser();
 
-    console.log("=== SUPABASE MIDDLEWARE ===");
-    console.log("PATH:", request.nextUrl.pathname);
-    console.log("USER:", user?.id);
-    console.log("EMAIL:", user?.email);
-
     if (
         !user &&
         !request.nextUrl.pathname.startsWith("/login") &&
@@ -53,14 +48,12 @@ export async function updateSession(request: NextRequest) {
         request.nextUrl.pathname !== "/"
     ) {
         // no user, potentially respond by redirecting the user to the login page
-        console.log("!!! NO USER -> REDIRECT TO LOGIN !!!");
         const url = request.nextUrl.clone();
         url.pathname = "/auth/login";
         return NextResponse.redirect(url);
     }
 
     if (user && request.nextUrl.pathname.startsWith("/auth")) {
-        console.log("!!! USER ON AUTH -> REDIRECT TO DASHBOARD !!!");
         const url = request.nextUrl.clone();
         url.pathname = "/dashboard";
         return NextResponse.redirect(url);

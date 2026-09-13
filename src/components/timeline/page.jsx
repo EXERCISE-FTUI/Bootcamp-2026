@@ -26,7 +26,7 @@ const Timeline = () => {
             </h2>
 
             <Image
-                src="/timeline-desktop.png"
+                src="/timeline26.png"
                 alt="Timeline"
                 width={3000}
                 height={3000}

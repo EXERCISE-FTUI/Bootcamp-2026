@@ -230,13 +230,13 @@ export default function RegistrationForm({ email }: RegistrationFormProps) {
                 <TabsList className="grid w-full grid-cols-2">
                     <TabsTrigger
                         value="personal"
-                        className="data-[state=active]:bg-[#584B7C] data-[state=active]:text-white bg-gray-200"
+                        className="data-[state=active]:bg-red_3 data-[state=active]:text-white bg-gray-200"
                     >
                         Personal Information
                     </TabsTrigger>
                     <TabsTrigger
                         value="document"
-                        className="data-[state=active]:bg-[#584B7C] data-[state=active]:text-white bg-gray-200"
+                        className="data-[state=active]:bg-red_3 data-[state=active]:text-white bg-gray-200"
                     >
                         Document
                     </TabsTrigger>
@@ -439,7 +439,7 @@ export default function RegistrationForm({ email }: RegistrationFormProps) {
 
                             <div className="space-y-4">
                                 <div className="space-y-2">
-                                    <h3 className="text-lg font-medium text-[#584B7C]">
+                                    <h3 className="text-lg font-medium text-red_3">
                                         Choose your learning path!
                                     </h3>
                                     <p className="text-sm">

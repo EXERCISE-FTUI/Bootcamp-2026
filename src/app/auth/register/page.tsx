@@ -82,23 +82,14 @@ const Page = () => {
                     <h1 className=" flex text-white scroll-m-20 text-3xl font-extrabold tracking-tight lg:text-4xl">
                         Register
                     </h1>
-                    <div className="mt-5 md:mt-0 w-full items-center grid grid-cols-1 md:grid-cols-2 gap-4 justify-center">
-                        <div className="w-full lg:px-0 px-8 col-span-1 items-center justify-center flex">
+                    <div className="mt-5 md:mt-0 w-full items-center flex gap-4 justify-center">
+                        <div className="w-full mt-[100px] lg:px-0 px-8 col-span-1 items-center justify-center flex">
                             <RegisterForm
                                 handleRegister={handleRegister}
                                 setRegisterData={setRegisterData}
                                 setconfirmPassword={setConfirmPassword}
                                 registerData={registerData}
                                 loading={loading}
-                            />
-                        </div>
-                        <div className="w-full col-span-1 items-center justify-center flex">
-                            <Image
-                                src="/Graphic.svg"
-                                alt="logo"
-                                width={10000}
-                                height={10000}
-                                className="hidden md:flex w-full object-contain"
                             />
                         </div>
                     </div>
@@ -108,9 +99,9 @@ const Page = () => {
                     <h1 className=" flex text-white scroll-m-20 text-3xl font-extrabold tracking-tight lg:text-4xl">
                         Register
                     </h1>
-                    <div className="mt-5 md:mt-0 w-full items-center grid grid-cols-1 md:grid-cols-2 gap-4 justify-center">
+                    <div className="mt-5 md:mt-0 w-full items-center flex gap-4 justify-center">
                         <div className="w-full lg:px-0 px-8 col-span-1 items-center justify-center flex">
-                            <Card className="w-full max-w-[400px] p-1 ">
+                            <Card className="w-full mt-[100px] max-w-[400px] p-1 ">
                                 <CardHeader>
                                     <CardTitle className="text-xl text-center font-semibold">
                                         Email Sent!
@@ -121,7 +112,7 @@ const Page = () => {
                                     <Check size={50} className="mx-auto" />
 
                                     <div className="flex flex-col">
-                                        <CardDescription className="text-center text-purple_4 font-bold text-xl">
+                                        <CardDescription className="text-center text-red_3 font-bold text-xl">
                                             Please Verify Your Email
                                         </CardDescription>
 
@@ -134,24 +125,15 @@ const Page = () => {
                                     <CardDescription className="text-center">
                                         Didn&apos;t receive an email?{" "}
                                         <Link
-                                            href="https://api.whatsapp.com/send/?phone=%2B6282113383767"
+                                            href="https://api.whatsapp.com/send/?phone=%2B628551485161"
                                             target="_blank"
-                                            className="text-purple_4 hover:underline"
+                                            className="text-red_3 hover:underline"
                                         >
                                             Contact Support
                                         </Link>
                                     </CardDescription>
                                 </CardContent>
                             </Card>
-                        </div>
-                        <div className="w-full col-span-1 items-center justify-center flex">
-                            <Image
-                                src="/Graphic.svg"
-                                alt="logo"
-                                width={10000}
-                                height={10000}
-                                className="hidden md:flex w-full object-contain"
-                            />
                         </div>
                     </div>
                 </>

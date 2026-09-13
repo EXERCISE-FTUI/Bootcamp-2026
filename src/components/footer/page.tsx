@@ -108,17 +108,9 @@ const Footer = () => {
             </div>
             <div className="mt-2 mb-4 lg:mb-10 flex items-center justify-center">
                 <p className="text-blue_3 font-semibold text-md">
-                    © 2025 Exercise FTUI.
+                    © 2026 Exercise FTUI.
                 </p>
             </div>
-
-            <Image
-                src="/footer/aurora.png"
-                alt="footer-bg"
-                className="absolute -top-20 scale-[70%] -right-40 hidden lg:flex"
-                width={1000}
-                height={1000}
-            />
         </div>
     );
 };

@@ -83,7 +83,7 @@ export const LoginForm: React.FC<LoginFormProps> = ({
                     </div>
                     <Button
                         type="submit"
-                        className="w-full bg-[#584890] hover:bg-[#4a3d7a]"
+                        className="w-full bg-red_1 hover:bg-red_2"
                     >
                         {loading ? (
                             <Loader className="animate-spin" />
@@ -121,7 +121,7 @@ export const LoginForm: React.FC<LoginFormProps> = ({
                         Don&apos;t have an account?{" "}
                         <Link
                             href="/auth/register"
-                            className="font-semibold text-black hover:text-[#4a3d7a]"
+                            className="font-semibold text-black hover:text-red_1"
                         >
                             Register
                         </Link>

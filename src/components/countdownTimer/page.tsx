@@ -49,11 +49,11 @@ const CountdownTimer: React.FC = () => {
                 transition={{ duration: 1, delay: 1.5 }}
             >
                 <div
-                    className="absolute w-full h-1/2 translate-y-4 bg-black z-0"
+                    className="absolute w-full h-1/2 translate-y-4 bg-black/10 z-0"
                     style={{
                         background: "linear-gradient(0deg, #b39898, #b39898)",
-                        filter: "blur(200px)",
-                        borderRadius: "100px",
+                        filter: "blur(100px)",
+                        borderRadius: "5px",
                     }}
                 ></div>
                 {/* Main container with relative positioning */}
@@ -125,7 +125,7 @@ const CountdownTimer: React.FC = () => {
                     </div>
 
                     {/* Background Gradient - Positioned relative to container */}
-                    <div className="w-[110vw] lg:w-full h-4/5 lg:h-2/3 -bottom-6 lg:bottom-0 -left-4 lg:rounded-xl backdrop-blur-sm absolute z-0 bg-gradient-to-br from-[#240005] via-[#4A0012] to-[#760022]">
+                    <div className="w-[110vw] lg:w-full h-4/5 lg:h-2/3 -bottom-6 lg:bottom-0 -left-4 lg:rounded-xl backdrop-blur-sm absolute z-0 bg-gradient-to-br from-blue_4 via-[#4A0012] to-[#760022]">
                         {/* Kamu bisa menambahkan elemen dekorasi tambahan di sini jika diperlukan (seperti icon '+' di sudut) */}
                     </div>
 

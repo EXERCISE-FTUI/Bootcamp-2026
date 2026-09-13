@@ -101,7 +101,7 @@ function FileUpload({
                 <Card
                     className={`max-h-32 overflow-hidden relative border-2 border-dashed rounded-lg p-3 ${
                         dragActive
-                            ? "border-[#584B7C] bg-[#584B7C]/5"
+                            ? "border-red_2 bg-[#584B7C]/5"
                             : "border-gray-300"
                     }`}
                     onDragEnter={handleDrag}

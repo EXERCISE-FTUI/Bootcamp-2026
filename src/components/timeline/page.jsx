@@ -34,7 +34,7 @@ const Timeline = () => {
             />
 
             <Image
-                src="/timeline-mobile.png"
+                src="/timeline-mobile26.png"
                 alt="Timeline"
                 width={1000}
                 height={2000}

@@ -1,4 +1,4 @@
-export const LineGroupLink = "https://line.me/ti/g/kYB4L3R2kE";
+export const LineGroupLink = "https://line.me/R/ti/g/YBdLDHqe4s";
 export const bookletLink =
     "https://drive.google.com/drive/folders/1xjrOhLXiuaFEM-SWV_X36qseaPQpiDdx?usp=sharing";
 export const campaignIKMExpoDeadline = "2026-09-18T23:59:00";

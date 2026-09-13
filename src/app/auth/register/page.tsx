@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { RegisterForm } from "./_components/RegisterForm";
-import Image from "next/image";
 import { useToast } from "@/hooks/use-toast";
 import {
     Card,

@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { LoginForm } from "./_components/LoginForm";
-import Image from "next/image";
 import { useToast } from "@/hooks/use-toast";
 import { useRouter } from "next/navigation";
 

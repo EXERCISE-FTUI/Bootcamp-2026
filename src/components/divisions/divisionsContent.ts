@@ -8,9 +8,9 @@ interface Division {
 export const divisionsContent: Division[] = [
     {
         title: "Software",
-        projectTitle: "Smart AI To-Do List Web App",
+        projectTitle: "Automated Productivity Planner Web App",
         description:
-            "In this project, you will build a task manager that understands human language, eliminating the need to fill out separate date and time fields. The application will be powered by AI to intelligently extract key details automatically, turning the tedious logging process into a quick and intuitive interaction.",
+            "In this project, you will develop a high-performance productivity planner web application designed for maximum efficiency. By leveraging robust API integrations, the system delivers intelligent, automated reminders to ensure users never miss a deadline and seamlessly stay on top of their priorities.",
         modules: [
             "HTML, CSS & React",
             "Javascript & Data Structure",
@@ -20,26 +20,26 @@ export const divisionsContent: Division[] = [
     },
     {
         title: "Hardware",
-        projectTitle: "Smart AI Home System",
+        projectTitle: "Pomodoro Desktop Buddy",
         description:
-            "The  project moves beyond manual switches and rigid, pre-programmed commands. In this project, you will build a simulated smart home that responds to natural language; no more separate buttons for every function. The system will be powered by an AI to intelligently interpret your text-based instructions, turning device control into a dynamic and conversational interaction.",
+            "In this project, you will build a Pomodoro Desktop Buddy, a desktop companion device designed to help users manage study and work intervals efficiently using focused time-blocking features.",
         modules: [
             "Electronics Fundamentals",
             "Programming for Microcontrollers",
             "IoT",
-            "AI Integration",
+            "3D Modelling",
         ],
     },
     {
         title: "UI/UX",
-        projectTitle: "Campus Life Web App Design",
+        projectTitle: "Campus Life & Task Management System",
         description:
-            "The project challenges the scattered and overwhelming way students access university opportunities. For this project, you will design an all-in-one digital hub that consolidates information on committees, scholarships, and competitions.",
+            "This project aims to design an integrated web platform that helps students effectively manage all their college schedules and tasks. Far beyond purely academic responsibilities like coursework and exams, this platform also covers non-academic activities, organization duties, personal schedules, and other essential aspects of campus life.",
         modules: [
-            "UI/UX & Figma Fundamentals",
-            "Flowchart & Wireframe",
-            "UI, Color & Design",
-            "Prototype",
+            "UI/UX, Figma Fundamentals & Flowcharts",
+            "Wireframe, UI, Color, Design, & Typography",
+            "Prototyping",
+            "One on One Mentoring",
         ],
     },
 ];

@@ -48,7 +48,7 @@ const Divisions = () => {
                         <div className="text-[#0A192F] text-center text-2xl lg:text-3xl font-['Inter'] tracking-tighter font-semibold">
                             What will you build:
                         </div>
-                        <div className="text-white rounded-md bg-purple_3 w-fit mx-auto px-4 py-1 text-center text-xl lg:text-3xl font-['Inter'] tracking-tight font-bold mb-8">
+                        <div className="text-[#0A192F] rounded-md bg-purple_3 w-fit mx-auto px-4 py-1 text-center text-xl lg:text-3xl font-['Inter'] tracking-tight font-bold mb-8">
                             {currentDivision.projectTitle}
                         </div>
                         <div className="flex flex-col lg:flex-row justify-center w-full items-start lg:gap-16 pb-[36px]">

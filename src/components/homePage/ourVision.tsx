@@ -14,17 +14,7 @@ const OurVision = () => {
             </h1>
             <div className="w-full h-auto p-4 text-center bg-gradient-to-r from-blue_3 to-red_3 rounded-lg">
                 <p className="text-white_1 text-md lg:text-2xl font-extralight">
-                    In the AIgnite (is called ‘egg-nite’) bootcamp program,
-                    you’ll not only develop industry-relevant skills using AI
-                    but also learn to{" "}
-                    <span className="font-bold">
-                        integrate AI into your very first tech-based project!
-                    </span>{" "}
-                    Perform well in the bootcamp, and you’ll have the chance to
-                    secure an{" "}
-                    <span className="font-bold">
-                        internship opportunity at EXERCISE FTUI!
-                    </span>{" "}
+                    In the Prodify bootcamp program, you will not only develop industry-relevant skills but also build a practical tech solution designed to be used throughout your university life by yourself or your peers! Perform well in the bootcamp, and you will have the chance to secure an internship opportunity at EXERCISE FTUI!
                 </p>
             </div>
         </motion.div>

@@ -37,7 +37,7 @@ export const NotRegisteredDashboard = (userData: UserData) => {
                             </h1>
                             {/* ubah jadi tidak bisa fill form lagi jika sudah melewati deadline */}
                             <Button
-                                className="bg-[#804AF2] hover:bg-[#702EFC] lg:text-xl text-white px-8 py-3 rounded-lg font-medium"
+                                className="bg-red_1 hover:bg-red_3 lg:text-xl text-white px-8 py-3 rounded-lg font-medium"
                                 onClick={() => router.push("/dashboard/upload")}
                             >
                                 Fill Form
@@ -47,7 +47,7 @@ export const NotRegisteredDashboard = (userData: UserData) => {
                                     new Date(
                                         campaignIKMExpoDeadline
                                     ).getTime() && (
-                                    <div className="mt-2 px-4 py-2 bg-purple-100 text-purple-800 rounded text-sm font-medium">
+                                    <div className="mt-2 px-4 py-2 bg-purple-100 text-red_1 rounded text-sm font-medium">
                                         IKM Expo attendee bonus: Submit before{" "}
                                         <b>{toStringDate(campaignIKMExpoDeadline)}</b> to receive{" "}
                                         <b>100 pts</b> bonus!

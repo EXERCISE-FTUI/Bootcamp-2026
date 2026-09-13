@@ -80,7 +80,7 @@ const HelpButton = () => {
                     }`}
                     style={{
                         background:
-                            "linear-gradient(90deg, #383F96 0%, #55457E 100%)",
+                            "linear-gradient(90deg, #0D2734 0%, #A1140B 100%)",
                         boxShadow: "0px 1px 12px rgba(250, 250, 250, 0.25)",
                     }}
                 >
@@ -124,16 +124,16 @@ const HelpButton = () => {
                                 style={{
                                     transformOrigin: "bottom",
                                     background:
-                                        "linear-gradient(90deg, #383F96 0%, #55457E 100%)",
+                                        "linear-gradient(90deg, #0D2734 0%, #A1140B 100%)",
                                 }}
                             >
                                 <ContactList
-                                    name="Tian"
-                                    number="+6282113383767"
+                                    name="Clement"
+                                    number="+628551485161"
                                 />
                                 <ContactList
-                                    name="Kiara"
-                                    number="+6283553684621"
+                                    name="Yohana"
+                                    number="+6287888131118"
                                 />
                             </motion.div>
                         )}

@@ -11,7 +11,7 @@ export default function Home() {
                 {/* Merch Banner and Leaderboard */}
                 <div className="p-2 lg:px-14">
                     <Image
-                        src="/banner-merch.png"
+                        src="/banner-merch26.png"
                         alt="merch banner"
                         width={3000}
                         height={2000}

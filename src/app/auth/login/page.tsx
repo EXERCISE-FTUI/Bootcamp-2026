@@ -53,22 +53,13 @@ export default function LoginPage() {
             <h1 className=" flex text-white scroll-m-20 text-3xl font-extrabold tracking-tight lg:text-4xl">
                 Login
             </h1>
-            <div className="mt-5 md:mt-0 w-full items-center grid grid-cols-1 md:grid-cols-2 gap-4 justify-center">
-                <div className="w-full lg:px-0 px-8 col-span-1 items-center justify-center flex">
+            <div className="mt-5 md:mt-0 w-full items-center flex gap-4 justify-center">
+                <div className="w-full mt-[100px] lg:px-0 px-8 col-span-1 items-center justify-center flex">
                     <LoginForm
                         handleLogin={handleLogin}
                         setLoginData={setLoginData}
                         loginData={loginData}
                         loading={loading}
-                    />
-                </div>
-                <div className="w-full col-span-1 items-center justify-center flex">
-                    <Image
-                        src="/Graphic.svg"
-                        alt="logo"
-                        width={10000}
-                        height={10000}
-                        className="hidden md:flex w-full object-contain"
                     />
                 </div>
             </div>

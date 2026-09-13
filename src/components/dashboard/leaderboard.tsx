@@ -30,7 +30,7 @@ export const LeaderboardSection = async (
     // Show fallback message if no data
     if (!leaderboardData || leaderboardData.length === 0) {
         return (
-            <div className="bg-gradient-to-bl from-[#10152C] to-[#6A4FCF] py-16">
+            <div className="bg-gradient-to-bl from-[#10152C] to-red_3 py-16">
                 <div className="container mx-auto px-6">
                     <h2 className="text-5xl font-bold text-white text-center mb-12">
                         Leaderboard
@@ -77,7 +77,7 @@ export const LeaderboardSection = async (
                 className="w-full py-12 rounded-b-3xl flex flex-col items-center"
                 style={{
                     background:
-                        "radial-gradient(at -200% 200%, #6A4FCF, #10162C)",
+                        "radial-gradient(at -200% 200%, #760022, #10162C)",
                 }}
             >
                 <h2 className="lg:text-5xl text-4xl lg:mb-0 mb-8 font-bold text-white text-center">
@@ -122,7 +122,7 @@ export const LeaderboardSection = async (
                                     {user.full_name}
                                 </p>
                                 <div className="w-24 flex flex-col justify-center items-center text-white">
-                                    <div className="bg-white tracking-wide backdrop-blur-3xl bg-opacity-20 px-4 truncate max-w-32 text-[#A259FF] py-1 rounded-full text-xl font-bold ">
+                                    <div className="bg-white tracking-wide backdrop-blur-3xl bg-opacity-20 px-4 truncate max-w-32 text-[#ff6e98] py-1 rounded-full text-xl font-bold ">
                                         {user.points}
                                     </div>
                                 </div>
@@ -163,7 +163,7 @@ export const LeaderboardSection = async (
                                 <div
                                     className={`w-24 flex flex-col justify-center items-center text-white`}
                                 >
-                                    <div className="bg-white tracking-wide backdrop-blur-3xl bg-opacity-20 px-4 truncate max-w-32 text-[#A259FF] py-1 rounded-full text-xl font-bold ">
+                                    <div className="bg-white tracking-wide backdrop-blur-3xl bg-opacity-20 px-4 truncate max-w-32 text-[#ff6e98] py-1 rounded-full text-xl font-bold ">
                                         {user.points}
                                     </div>
                                 </div>
@@ -188,7 +188,7 @@ export const LeaderboardSection = async (
                                         {user.full_name}
                                     </span>
                                 </div>
-                                <span className="text-purple-600 text-xl font-bold">
+                                <span className="text-red_1 text-xl font-bold">
                                     {user.points}
                                 </span>
                             </div>

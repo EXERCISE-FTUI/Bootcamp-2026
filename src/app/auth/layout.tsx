@@ -8,7 +8,7 @@ export default async function RootLayout({
             className="min-h-screen"
             style={{
                 background:
-                    "linear-gradient(90deg,#11152E 0%, #342C6E 30%, #342C6E 51%, #11152E 79%)",
+                    "linear-gradient(119.97deg, #10152C 7.46%, #59001a 44.79%, #121212 85.66%)",
                 minHeight: "100vh",
             }}
         >

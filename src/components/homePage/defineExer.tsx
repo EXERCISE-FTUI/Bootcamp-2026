@@ -19,7 +19,7 @@ const DefineExer = () => {
                 <div className="flex flex-col max-md:items-center max-md:justify-center">
                     <div className="w-[380px] h-48 max-md:w-full max-md:h-32 items-center relative overflow-visible">
                         <Image
-                            src="/aignite.png"
+                            src="/logo-prodify.png"
                             alt="exerBox1"
                             className="w-full h-fit object-cover"
                             width={380}
@@ -53,7 +53,7 @@ const DefineExer = () => {
                         <span className="font-bold"> 1-month bootcamp</span> for
                         <span className="font-bold">
                             {" "}
-                            all FTUI students from the 2025 batch{" "}
+                            all FTUI students from the 2026 batch{" "}
                         </span>{" "}
                         where you&apos;ll learn, explore, and work on a
                         project-based learning designed for beginners with 0

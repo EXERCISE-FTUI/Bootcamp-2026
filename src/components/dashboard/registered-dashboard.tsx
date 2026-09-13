@@ -55,14 +55,7 @@ export const RegisteredDashboard = (userData: UserData) => {
     return (
         <>
             <div className="w-full h-auto flex flex-col gap-12 p-4 lg:p-16 items-center pt-36 mb-20 relative overflow-hidden">
-                <Image
-                    src="/merchPoster.png"
-                    alt="merch poster"
-                    width={100}
-                    height={100}
-                    className="w-full h-60 object-cover bg-white"
-                />
-                <div className="bg-black/20 backdrop-blur-md w-full lg:w-3/4 border border-white/20 rounded-lg h-auto lg:h-60 p-8 lg:p-12 flex flex-col justify-between">
+                <div className="bg-black/20 lg:mt-[100px] backdrop-blur-md w-full lg:w-3/4 border border-white/20 rounded-lg h-auto lg:h-60 p-8 lg:p-12 flex flex-col justify-between">
                     {/* Top section with greeting and points */}
                     <div className="flex lg:flex-row flex-col justify-between items-start h-full lg:gap-0 gap-8">
                         <div className="flex flex-col justify-between w-full lg:w-1/2 h-full">
@@ -96,7 +89,7 @@ export const RegisteredDashboard = (userData: UserData) => {
                         </div>
                         <div className="text-right flex flex-col justify-between h-full self-end">
                             <div>
-                                <span className="text-[#8B7CF6] text-6xl font-bold">
+                                <span className="text-[#ff6e98] text-6xl font-bold">
                                     {userData.points}
                                 </span>
                                 <span className="text-white text-3xl ml-1">
@@ -118,7 +111,7 @@ export const RegisteredDashboard = (userData: UserData) => {
                                             onMouseLeave={() =>
                                                 setCopyTooltip("")
                                             }
-                                            className="bg-purple-600 rounded-md h-full w-12 flex items-center justify-center hover:bg-purple-700 transition-colors"
+                                            className="bg-red_3 rounded-md h-full w-12 flex items-center justify-center hover:bg-red_3 transition-colors"
                                         >
                                             <CopyIcon size={20} />
                                         </button>
@@ -137,7 +130,7 @@ export const RegisteredDashboard = (userData: UserData) => {
                                             onMouseLeave={() =>
                                                 setLinkTooltip("")
                                             }
-                                            className="bg-purple-800 rounded-md h-full w-12 flex items-center justify-center hover:bg-purple-900 transition-colors"
+                                            className="bg-red_3-800 rounded-md h-full w-12 flex items-center justify-center hover:bg-red_3-900 transition-colors"
                                         >
                                             <LinkIcon size={20} />
                                         </button>
@@ -157,7 +150,7 @@ export const RegisteredDashboard = (userData: UserData) => {
                     className="w-full h-full absolute top-0 left-0 z-[-1]"
                     style={{
                         background:
-                            "linear-gradient(119.97deg, #10152C 7.46%, #1F225B 44.79%, #121212 85.66%)",
+                            "linear-gradient(119.97deg, #10152C 7.46%, #59001a 44.79%, #121212 85.66%)",
                     }}
                 ></div>
                 <div
@@ -181,7 +174,7 @@ export const RegisteredDashboard = (userData: UserData) => {
                                 <h3 className="text-lg lg:text-3xl text-white">
                                     {mission.title}
                                 </h3>
-                                <p className="text-[#A259FF] text-lg lg:text-3xl">
+                                <p className="text-[#ff6e98] text-lg lg:text-3xl">
                                     {mission.points && mission.points > 0
                                         ? `${mission.points} Points`
                                         : ""}
@@ -520,7 +513,7 @@ export const RegisteredDashboard = (userData: UserData) => {
 //                                             onMouseLeave={() =>
 //                                                 setCopyTooltip("")
 //                                             }
-//                                             className="bg-purple-600 rounded-md h-full w-12 flex items-center justify-center hover:bg-purple-700 transition-colors"
+//                                             className="bg-red_3-600 rounded-md h-full w-12 flex items-center justify-center hover:bg-red_3-700 transition-colors"
 //                                         >
 //                                             <CopyIcon size={20} />
 //                                         </button>
@@ -539,7 +532,7 @@ export const RegisteredDashboard = (userData: UserData) => {
 //                                             onMouseLeave={() =>
 //                                                 setLinkTooltip("")
 //                                             }
-//                                             className="bg-purple-800 rounded-md h-full w-12 flex items-center justify-center hover:bg-purple-900 transition-colors"
+//                                             className="bg-red_3-800 rounded-md h-full w-12 flex items-center justify-center hover:bg-red_3-900 transition-colors"
 //                                         >
 //                                             <LinkIcon size={20} />
 //                                         </button>

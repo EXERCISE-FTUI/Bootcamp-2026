@@ -12,7 +12,7 @@ const OurVision = () => {
             <h1 className="text-7xl text-center font-normal tracking-tighter text-white max-md:text-5xl mb-8 max-md:mb-5 ">
                 What will we <span className="font-black text-8xl">Do?</span>
             </h1>
-            <div className="w-full h-auto p-4 text-center bg-gradient-to-r from-blue_2 to-purple_4">
+            <div className="w-full h-auto p-4 text-center bg-gradient-to-r from-blue_3 to-red_3 rounded-lg">
                 <p className="text-white_1 text-md lg:text-2xl font-extralight">
                     In the AIgnite (is called ‘egg-nite’) bootcamp program,
                     you’ll not only develop industry-relevant skills using AI

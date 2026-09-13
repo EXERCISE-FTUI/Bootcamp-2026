@@ -102,7 +102,7 @@ export const RegisterForm: React.FC<RegisterFormProps> = ({
                     </div>
                     <Button
                         type="submit"
-                        className="w-full bg-[#584890] hover:bg-[#4a3d7a]"
+                        className="w-full bg-red_1 hover:bg-red_2"
                     >
                         {loading ? (
                             <Loader className="animate-spin" />
@@ -140,7 +140,7 @@ export const RegisterForm: React.FC<RegisterFormProps> = ({
                         Already have an account?{" "}
                         <Link
                             href="/auth/login"
-                            className="font-semibold text-black hover:text-[#4a3d7a]"
+                            className="font-semibold text-black hover:red_1"
                         >
                             Login
                         </Link>

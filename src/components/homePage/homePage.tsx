@@ -29,9 +29,9 @@ const HomePageExer = () => {
     return (
         <div className="w-full lg:mt-20 lg:h-[500px] lg:p-0 p-8 pb-10 lg:pb-20 overflow-hidden relative">
             <div className="w-full h-[130%] gap-8 flex flex-col justify-center items-center">
-                <h1 className="text-center text-4xl lg:text-6xl max-md:text-xl font-black text-blue_3">
+                <h1 className="text-center text-4xl lg:text-6xl max-md:text-xl font-black text-blue_4">
                     <motion.span
-                        className="lg:px-4 px-2 py-1 w-auto h-auto bg-blue_3 text-white_2"
+                        className="lg:px-4 px-2 py-1 w-auto h-auto bg-blue_4 text-white_2"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1.2 }}
                         transition={{
@@ -64,7 +64,7 @@ const HomePageExer = () => {
                             height={110}
                             className="w-[725px] h-[35px] lg:h-[110px] z-10"
                         />
-                        <p className="text-blue_3 text-2xl max-md:text-lg font-extrabold italic">
+                        <p className="text-blue_4 text-2xl max-md:text-lg font-extrabold italic">
                             #ExcellenceRefined
                         </p>
                     </div>
@@ -108,11 +108,11 @@ const HomePageExer = () => {
 
             {/*Right Section */}
             <Image
-                src="/polygonRight.svg"
-                alt="polygonRight"
+                src="/polygon26.png"
+                alt="polygon26"
                 width={171}
                 height={330}
-                className="absolute top-44 right-0 size z-0 max-lg:hidden"
+                className="absolute w-[350px] h-[350px] top-44 right-[-150] size z-0 max-lg:hidden"
             />
 
             <motion.img

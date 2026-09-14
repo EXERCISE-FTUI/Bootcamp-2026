@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic';
+
 import HomePage from "./home/page";
 import { LeaderboardSection } from "@/components/dashboard/leaderboard";
 import Image from "next/image";

@@ -20,6 +20,7 @@ interface FileUploadProps {
     onChange: (file: File | string | null) => void;
     file: File | string | null; // Add the `file` prop to display the link or file
     link?: string;
+    linkText?: string;
 }
 
 function FileUpload({
@@ -30,6 +31,7 @@ function FileUpload({
     onChange,
     file,
     link,
+    linkText,
 }: FileUploadProps) {
     const [dragActive, setDragActive] = useState(false);
     const [error, setError] = useState<string | null>(null);
@@ -89,19 +91,19 @@ function FileUpload({
             {link && (
                 <p className="text-sm text-blue_4 hover:underline">
                     <a
-                        href={`https://${link}`}
+                        href={link}
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        {link}
+                        {linkText || link}
                     </a>
                 </p>
             )}
             <div className="bg-white border border-blue_4 rounded-lg p-3">
                 <Card
                     className={`max-h-32 overflow-hidden relative border-2 border-dashed rounded-lg p-3 ${dragActive
-                            ? "border-red_2 bg-[#584B7C]/5"
-                            : "border-gray-300"
+                        ? "border-red_2 bg-[#584B7C]/5"
+                        : "border-gray-300"
                         }`}
                     onDragEnter={handleDrag}
                     onDragLeave={handleDrag}
@@ -442,7 +444,8 @@ export default function DocumentTab({
                 <FileUpload
                     label="Essay Motivation Letter"
                     note="Use the provided template here:"
-                    link="s.id/essayTemplateAIgnite"
+                    link="https://drive.google.com/drive/folders/1hf_QxkNrJietgHE9CHZi_ckMxyJmCffZ?usp=sharing"
+                    linkText="Template Motlet Prodify Bootcamp"
                     acceptedFormats=".pdf"
                     maxSize={4}
                     file={files.essayMotlet}

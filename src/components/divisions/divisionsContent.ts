@@ -15,7 +15,7 @@ export const divisionsContent: Division[] = [
             "HTML, CSS & React",
             "Javascript & Data Structure",
             "Website Interactivity",
-            "AI Integration",
+            "API Integration",
         ],
     },
     {

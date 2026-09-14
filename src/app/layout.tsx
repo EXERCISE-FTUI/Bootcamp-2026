@@ -15,9 +15,9 @@ import ReferralCapture from "@/components/ReferralCapture";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "AIgnite Bootcamp",
+    title: "Prodify Bootcamp",
     description:
-        "FREE 1 month bootcamp for all FTUI students from the 2025 batch",
+        "FREE 1 month bootcamp for all FTUI students from the 2026 batch",
 };
 
 async function checkUser() {

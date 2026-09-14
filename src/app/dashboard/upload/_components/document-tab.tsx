@@ -99,11 +99,10 @@ function FileUpload({
             )}
             <div className="bg-white border border-blue_4 rounded-lg p-3">
                 <Card
-                    className={`max-h-32 overflow-hidden relative border-2 border-dashed rounded-lg p-3 ${
-                        dragActive
+                    className={`max-h-32 overflow-hidden relative border-2 border-dashed rounded-lg p-3 ${dragActive
                             ? "border-red_2 bg-[#584B7C]/5"
                             : "border-gray-300"
-                    }`}
+                        }`}
                     onDragEnter={handleDrag}
                     onDragLeave={handleDrag}
                     onDragOver={handleDrag}
@@ -468,10 +467,12 @@ export default function DocumentTab({
                     <p>
                         Here&apos;s the twibbon link:{" "}
                         <a
-                            href="https://s.id/twibbonTemplateAIgnite"
+                            href="https://drive.google.com/drive/folders/1cgPAv5fSQSzIEw36IqQ53hxRs2NTLr4T"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="text-blue_4 hover:underline"
                         >
-                            s.id/twibbonTemplateAIgnite
+                            Twibbon Prodify Bootcamp
                         </a>
                     </p>
                 </div>

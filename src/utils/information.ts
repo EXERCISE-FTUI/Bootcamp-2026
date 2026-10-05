@@ -58,7 +58,7 @@ export const DepartementsList = [
     },
 ];
 
-export const deadlineCloseReg = "2026-10-05T23:59:00";
+export const deadlineCloseReg = "2026-10-09T23:59:00";
 
 export const Missions: {
     title: string;

@@ -65,18 +65,18 @@ export const Missions: {
     points?: number;
     action_name?: string;
 }[] = [
-    {
-        title: "Invite Your Friend!",
-        points: 100,
-        action_name: "referral_success",
-    },
-    {
-        title: "Visit us at IKM Expo!",
-        points: 100,
-        action_name: "ikm_expo_bonus",
-    },
-    {
-        title: "More missions coming soon!",
-        points: undefined,
-    },
-];
+        {
+            title: "Invite Your Friend!",
+            points: 100,
+            action_name: "referral_success",
+        },
+        {
+            title: "Visit us at IKM Expo!",
+            points: 100,
+            action_name: "ikm_expo_bonus",
+        },
+        {
+            title: "More missions coming soon!",
+            points: undefined,
+        },
+    ];

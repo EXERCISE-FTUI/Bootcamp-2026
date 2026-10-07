@@ -58,25 +58,25 @@ export const DepartementsList = [
     },
 ];
 
-export const deadlineCloseReg = "2026-10-05T23:59:00";
+export const deadlineCloseReg = "2026-10-09T23:59:00";
 
 export const Missions: {
     title: string;
     points?: number;
     action_name?: string;
 }[] = [
-    {
-        title: "Invite Your Friend!",
-        points: 100,
-        action_name: "referral_success",
-    },
-    {
-        title: "Visit us at IKM Expo!",
-        points: 100,
-        action_name: "ikm_expo_bonus",
-    },
-    {
-        title: "More missions coming soon!",
-        points: undefined,
-    },
-];
+        {
+            title: "Invite Your Friend!",
+            points: 100,
+            action_name: "referral_success",
+        },
+        {
+            title: "Visit us at IKM Expo!",
+            points: 100,
+            action_name: "ikm_expo_bonus",
+        },
+        {
+            title: "More missions coming soon!",
+            points: undefined,
+        },
+    ];

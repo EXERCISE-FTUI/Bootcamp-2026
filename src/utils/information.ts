@@ -1,4 +1,6 @@
 export const LineGroupLink = "https://line.me/R/ti/g/YBdLDHqe4s";
+export const AcceptedLineGroupLink = "https://line.me/ti/g/3_v4qD7Db6";
+export const AcceptedLineGroupQR = "/line-qr-lulus-26.jpeg";
 export const bookletLink =
     "https://drive.google.com/drive/folders/1xjrOhLXiuaFEM-SWV_X36qseaPQpiDdx?usp=sharing";
 export const campaignIKMExpoDeadline = "2026-09-18T23:59:00";
